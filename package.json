@@ -12,7 +12,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "deploy": "gatsby build && gh-pages -d public",
-    "deploy:ci": "gatsby build && gh-pages -d public -r https://$GH_TOKEN:github.com/archit-p/archit-p.github.io"
+    "deploy:ci": "gatsby build && gh-pages -d public -r https://$GH_TOKEN@github.com/archit-p/archit-p.github.io"
   },
   "dependencies": {
     "gatsby": "^2.26.1",
