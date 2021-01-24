@@ -1,0 +1,34 @@
+{
+  "name": "archit-p.github.io",
+  "private": true,
+  "description": "Personal Website",
+  "version": "0.1.0",
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "deploy": "gatsby build && gh-pages -d public -b master",
+    "deploy:ci": "gatsby build && gh-pages -d public -b master -r https://$GITHUB_TOKEN@github.com/archit-p/archit-p.github.io"
+  },
+  "dependencies": {
+    "gatsby": "^2.26.1",
+    "gatsby-plugin-react-helmet": "^3.9.0",
+    "gatsby-source-filesystem": "^2.10.0",
+    "gatsby-transformer-remark": "^2.15.0",
+    "highlight.js": "^10.5.0",
+    "prismjs": "^1.23.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.5.3",
+    "prettier": "2.2.1"
+  }
+}
