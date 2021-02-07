@@ -5,6 +5,7 @@ import Prism from "prismjs"
 import "prismjs/components/prism-makefile"
 import "prismjs/components/prism-json"
 import "prismjs/components/prism-go"
+import "prismjs/components/prism-python"
 import "prismjs/themes/prism.css"
 import PageMeta from "../components/PageMeta"
 
