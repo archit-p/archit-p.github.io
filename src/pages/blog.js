@@ -41,6 +41,7 @@ function Blog({ location }) {
       >
         {data.allMarkdownRemark.edges.map(post => (
           <div
+            className="mb-2"
             style={{
               display: "inline-block",
             }}
