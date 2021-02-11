@@ -6,8 +6,6 @@ description: "A Music Artist Recommender for finding artists similar to the ones
 keywords: "data science, data, machine learning, recommender systems"
 ---
 
-# Collaborative Filtering Based Music Artist Recommendation
-
 This notebook illustrates a technique to recommend similar artists to users based on users music listening history. For this task, I have utilized the Last.fm dataset ([link](http://files.grouplens.org/datasets/hetrec2011/hetrec2011-lastfm-readme.txt)), which contains music listening history for 2000 users from Last.fm.
 
 ## Part 1: Loading the Data
