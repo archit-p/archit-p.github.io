@@ -8,6 +8,7 @@ import "prismjs/components/prism-go"
 import "prismjs/components/prism-python"
 import "prismjs/themes/prism.css"
 import PageMeta from "../components/PageMeta"
+import ScrollToTop from "../components/ScrollToTop"
 
 function getPostMetaData(title, description, keywords) {
   return {
@@ -32,6 +33,7 @@ function BlogTemplate({ location, pageContext }) {
         )}
       />
       <Breadcrumbs path={location.pathname} style={{ marginTop: "4rem" }} />
+      <ScrollToTop />
       <section style={{ marginTop: "4rem" }}>
         <h1>{pageContext.frontmatter.title}</h1>
         <span style={{ fontSize: "0.875rem", color: "gray" }}>
