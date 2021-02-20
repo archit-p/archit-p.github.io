@@ -40,5 +40,12 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `black`,
+        showSpinner: false,
+      },
+    },
   ],
 }
