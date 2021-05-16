@@ -35,34 +35,18 @@ function Blog({ location }) {
   return (
     <div className="container">
       <PageMeta meta={getBlogMetaData()} />
-      <Breadcrumbs path={location.pathname} style={{ marginTop: "4rem" }} />
-      <div
-        style={{ display: "flex", flexDirection: "column", marginTop: "4rem" }}
-      >
+      <header className="d-flex ai-center" style={{ height: 120 }}>
+        <Breadcrumbs path={location.pathname} />
+      </header>
+      <div className="d-flex flex-column">
         {data.allMarkdownRemark.edges.map(post => (
-          <div
-            className="mb-2"
-            style={{
-              display: "inline-block",
-            }}
-          >
-            <Link
-              to={post.node.frontmatter.slug}
-              style={{
-                fontSize: "1.5rem",
-                fontWeight: 700,
-                textDecoration: "none",
-                color: "black",
-              }}
-            >
-              {post.node.frontmatter.title}
+          <div className="mb-2">
+            <Link className="blog-link" to={post.node.frontmatter.slug}>
+              <h3 className="mb-0 d-inline-block">
+                {post.node.frontmatter.title}
+              </h3>
             </Link>
-            <span
-              className="ml-1"
-              style={{ fontSize: "0.875rem", display: "inline", color: "gray" }}
-            >
-              {post.node.frontmatter.date}
-            </span>
+            <span className="blog-date ml-1">{post.node.frontmatter.date}</span>
           </div>
         ))}
       </div>

@@ -25,29 +25,12 @@ export default function ScrollToTop() {
   }, [])
 
   return (
-    <div
-      style={{
-        position: "fixed",
-        bottom: 10,
-        right: 10,
-        zIndex: 1000,
-        animation: "fadeIn 700ms ease-in-out 1s both",
-        cursor: "pointer",
-      }}
-    >
+    <div className="scroll-to-top-container">
       {isVisible && (
-        <div
-          onClick={scrollToTop}
-          style={{
-            width: 64,
-            height: 64,
-            padding: 20,
-            borderRadius: 1000,
-            backgroundColor: "white",
-            boxShadow: "0 0.5rem 2rem 0 rgba(44, 51, 73, 0.2)",
-          }}
-        >
-          <UpArrow />
+        <div className="scroll-icon-container" onClick={scrollToTop}>
+          <span className="svg-icon-xl">
+            <UpArrow />
+          </span>
         </div>
       )}
     </div>

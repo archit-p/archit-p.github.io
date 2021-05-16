@@ -32,9 +32,11 @@ function BlogTemplate({ location, pageContext }) {
           pageContext.frontmatter.keywords
         )}
       />
-      <Breadcrumbs path={location.pathname} style={{ marginTop: "4rem" }} />
+      <header className="d-flex ai-center" style={{ height: 120 }}>
+        <Breadcrumbs path={location.pathname} />
+      </header>
       <ScrollToTop />
-      <section style={{ marginTop: "4rem" }}>
+      <section>
         <h1>{pageContext.frontmatter.title}</h1>
         <span style={{ fontSize: "0.875rem", color: "gray" }}>
           {pageContext.frontmatter.date}

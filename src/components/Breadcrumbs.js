@@ -11,31 +11,12 @@ function Breadcrumbs({ path, ...rest }) {
   let breadcrumbs = []
   // first push the homepage link
   breadcrumbs.push(
-    <span
-      style={{
-        fontWeight: 700,
-        display: "inline-block",
-        marginRight: "0.25rem",
-      }}
-      key="seperator-0"
-    >
+    <span className="crumb-seperator" key="seperator-0">
       /
     </span>
   )
   breadcrumbs.push(
-    <Link
-      aria-current="page"
-      style={{
-        fontWeight: 700,
-        color: "black",
-        textDecoration: "none",
-        borderBottom: "0.125rem solid black",
-        paddingBottom: "0.25rem",
-        marginRight: "0.25rem",
-      }}
-      key="home"
-      to="/"
-    >
+    <Link aria-current="page" className="crumb-link" key="home" to="/">
       Archit Pandey
     </Link>
   )
@@ -43,28 +24,14 @@ function Breadcrumbs({ path, ...rest }) {
   for (var i = 1; i < items.length - 1; ++i) {
     currentLink += items[i]
     breadcrumbs.push(
-      <span
-        style={{
-          fontWeight: 700,
-          display: "inline-block",
-          marginRight: "0.25rem",
-        }}
-        key={"seperator-" + i}
-      >
+      <span className="crumb-seperator" key={"seperator-" + i}>
         /
       </span>
     )
     breadcrumbs.push(
       <Link
         aria-current="page"
-        style={{
-          fontWeight: 700,
-          color: "black",
-          textDecoration: "none",
-          borderBottom: "0.125rem solid",
-          paddingBottom: "0.25rem",
-          marginRight: "0.25rem",
-        }}
+        className="crumb-link"
         to={currentLink}
         key={items[i]}
       >

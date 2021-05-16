@@ -1,0 +1,152 @@
+.ap-nav-link {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 700;
+  list-style: none;
+  padding: 0px;
+  border-bottom: 2px solid black;
+}
+
+.ap-nav-link:hover {
+  color: black;
+  text-decoration: none;
+  border-bottom: 4px solid black;
+}
+
+.app-container {
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.crumb-link {
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+  border-bottom: 2px solid black;
+  padding-bottom: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.crumb-link:hover {
+  border-bottom: 4px solid black;
+  color: black;
+  text-decoration: none;
+}
+
+.ap-nav-wrapper {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.svg-icon svg {
+  position: relative;
+  height: 1em;
+  width: 1em;
+  bottom: 0.125em;
+}
+
+.svg-icon-xl svg {
+  position: relative;
+  height: 3em;
+  width: 3em;
+}
+
+a svg:hover {
+  stroke-width: 2px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700 !important;
+}
+
+.project-icon svg {
+  stroke: white;
+}
+
+.project-icon-container {
+  height: 80px;
+  width: 80px;
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-icon-container {
+  height: 80px;
+  width: 80px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.crumb-seperator {
+  font-weight: 700;
+  display: inline-block;
+  margin-right: 0.25rem;
+}
+
+.footer-container {
+  height: 160px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.875rem;
+  color: gray;
+}
+
+.footer-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.scroll-to-top-container {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.scroll-icon-container {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1000px;
+  background-color: white;
+  border: 2px solid black;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.blog-link {
+  color: black;
+  text-decoration: none;
+}
+
+.blog-link:hover {
+  color: black;
+}
+
+.blog-date {
+  font-size: 0.875rem;
+  display: inline;
+  color: gray;
+}

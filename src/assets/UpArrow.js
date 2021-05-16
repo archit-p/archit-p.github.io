@@ -3,18 +3,19 @@ import React from "react"
 function UpArrow() {
   return (
     <svg
-      x="0px"
-      y="0px"
-      viewBox="0 0 256 256"
-      style={{ enableBackground: "new 0 0 256 256" }}
+      width="48"
+      height="48"
+      viewBox="0 0 24 24"
+      strokeWidth="1.5"
+      stroke="#2c3e50"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     >
-      <g>
-        <g>
-          <polygon
-            points="128,48.907 0,176.907 30.187,207.093 128,109.28 225.813,207.093 256,176.907"
-          />
-        </g>
-      </g>
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <line x1="12" y1="5" x2="12" y2="19" />
+      <line x1="18" y1="11" x2="12" y2="5" />
+      <line x1="6" y1="11" x2="12" y2="5" />
     </svg>
   )
 }
