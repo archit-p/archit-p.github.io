@@ -115,8 +115,8 @@ h4 {
 
 .scroll-to-top-container {
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 64px;
+  right: 16px;
   z-index: 1000;
   cursor: pointer;
 }
