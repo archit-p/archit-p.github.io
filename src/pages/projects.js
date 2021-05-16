@@ -46,7 +46,7 @@ export default function Projects({ location }) {
                 <span className="svg-icon-xl project-icon">{project.logo}</span>
               </div>
               <div className="project-title-container">
-                <h2>{project.title}</h2>
+                <h3 className="mb-1">{project.title}</h3>
                 <div>{project.subTitle}</div>
               </div>
             </div>
