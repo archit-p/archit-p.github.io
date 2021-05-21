@@ -1,11 +1,13 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import Sun from "../assets/Sun"
 import Moon from "../assets/Moon"
 
 export default function ThemeSwitch() {
-  const [mode, setMode] = useState(
-    document.documentElement.getAttribute("color-mode")
-  )
+  const [mode, setMode] = useState(undefined)
+
+  useEffect(() => {
+    setMode(document.documentElement.getAttribute("color-mode"))
+  }, [])
 
   function setColorMode(newValue) {
     setMode(newValue)
