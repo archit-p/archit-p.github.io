@@ -1,11 +1,11 @@
 import React from "react"
-import "bootstrap/dist/css/bootstrap.css"
+import "normalize.css/normalize.css"
 import Footer from "../components/Footer"
 import Breadcrumbs from "../components/Breadcrumbs"
 import PageMeta from "../components/PageMeta"
 import EditableReactTable from "../assets/editable-react-table.gif"
 import Table from "../assets/Table"
-import Github from "../assets/Github"
+import ThemeSwitch from "../components/ThemeSwitch"
 
 function getMetaData() {
   return {
@@ -32,6 +32,9 @@ export default function Projects({ location }) {
       <PageMeta meta={getMetaData()} />
       <header className="d-flex ai-center" style={{ height: 120 }}>
         <Breadcrumbs path={location.pathname} />
+        <span style={{ marginLeft: "auto" }}>
+          <ThemeSwitch />
+        </span>
       </header>
       <div>
         {projects.map(project => (

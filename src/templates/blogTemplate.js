@@ -38,9 +38,7 @@ function BlogTemplate({ location, pageContext }) {
       <ScrollToTop />
       <section>
         <h1>{pageContext.frontmatter.title}</h1>
-        <span style={{ fontSize: "0.875rem", color: "gray" }}>
-          {pageContext.frontmatter.date}
-        </span>
+        <span className="blog-date">{pageContext.frontmatter.date}</span>
         <article
           style={{ marginTop: "2rem" }}
           dangerouslySetInnerHTML={{ __html: pageContext.content }}

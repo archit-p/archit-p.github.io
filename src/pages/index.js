@@ -1,9 +1,10 @@
 import React from "react"
-import "bootstrap/dist/css/bootstrap.css"
+import "normalize.css/normalize.css"
 import Footer from "../components/Footer"
 import LinkWrapper from "../components/LinkWrapper"
 import PageMeta from "../components/PageMeta"
 import Emoji from "../components/Emoji"
+import ThemeSwitch from "../components/ThemeSwitch"
 
 function getHomeMetaData() {
   return {
@@ -46,9 +47,17 @@ function Home() {
           height: 120,
         }}
       >
-        <div style={{ fontSize: "1.5rem", fontWeight: 700 }}>Archit Pandey</div>
+        <div
+          style={{ fontSize: "1.5rem", fontWeight: 700 }}
+          className="d-flex ai-center"
+        >
+          Archit Pandey
+          <span style={{ marginLeft: "auto" }}>
+            <ThemeSwitch />
+          </span>
+        </div>
       </header>
-      <p style={{ maxWidth: 480 }}>
+      <p style={{ maxWidth: 480 }} className="mt-0">
         <Emoji symbol="👋" label="waving-hand" /> Hi there, welcome to my
         webpage! I'm a software engineer by profession, and enjoy gardening in
         my spare time. Currently, I am employed as a Software Development
