@@ -17,9 +17,12 @@ export default function ThemeSwitch() {
 
   return (
     <span
+      role="button"
+      tabIndex={0}
       className="svg-icon svg-text d-flex jc-center ml-1"
       style={{ fontSize: "1.5rem", cursor: "pointer" }}
       onClick={() => setColorMode(mode === "dark" ? "light" : "dark")}
+      onKeyDown={() => setColorMode(mode === "dark" ? "light" : "dark")}
     >
       {mode === "dark" ? <Sun /> : <Moon />}
     </span>

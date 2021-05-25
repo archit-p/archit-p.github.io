@@ -34,7 +34,10 @@ function Blog({ location }) {
   `)
 
   return (
-    <div className="container">
+    <div
+      className="container"
+      style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}
+    >
       <PageMeta meta={getBlogMetaData()} />
       <header className="d-flex ai-center" style={{ height: 120 }}>
         <Breadcrumbs path={location.pathname} />
@@ -42,7 +45,7 @@ function Blog({ location }) {
           <ThemeSwitch />
         </span>
       </header>
-      <div className="d-flex flex-column">
+      <div className="d-flex flex-column" style={{ flex: 1 }}>
         {data.allMarkdownRemark.edges.map(post => (
           <div className="mb-4">
             <Link className="blog-link mr-1" to={post.node.frontmatter.slug}>

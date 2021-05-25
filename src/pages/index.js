@@ -39,7 +39,10 @@ function Home() {
   const links = getPageLinks()
 
   return (
-    <div className="container">
+    <div
+      className="container"
+      style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
+    >
       <PageMeta meta={getHomeMetaData()} />
       <header
         className="d-flex flex-column jc-center"
@@ -57,24 +60,26 @@ function Home() {
           </span>
         </div>
       </header>
-      <p style={{ maxWidth: 640 }} className="mt-0">
-        <Emoji symbol="👋" label="waving-hand" /> Hi there, welcome to my
-        webpage! I'm a software engineer by profession, and enjoy gardening in
-        my spare time. Currently, I am employed as a Software Development
-        Engineer at <a href="http://deskera.com">Deskera</a>.
-      </p>
-      <ul className="pl-0" style={{ listStyleType: "none" }}>
-        {links.map(link => (
-          <li className="ap-nav-wrapper" key={link.title}>
-            <LinkWrapper
-              className="ap-nav-link"
-              to={link.to}
-              internal={link.internal}
-              title={link.title}
-            />
-          </li>
-        ))}
-      </ul>
+      <div style={{ flex: 1 }}>
+        <p style={{ maxWidth: 640 }} className="mt-0">
+          <Emoji symbol="👋" label="waving-hand" /> Hi there, welcome to my
+          webpage! I'm a software engineer by profession, and enjoy gardening in
+          my spare time. Currently, I am employed as a Software Development
+          Engineer at <a href="http://deskera.com">Deskera</a>.
+        </p>
+        <ul className="pl-0" style={{ listStyleType: "none" }}>
+          {links.map(link => (
+            <li className="ap-nav-wrapper" key={link.title}>
+              <LinkWrapper
+                className="ap-nav-link"
+                to={link.to}
+                internal={link.internal}
+                title={link.title}
+              />
+            </li>
+          ))}
+        </ul>
+      </div>
       <Footer bottom={true} />
     </div>
   )
