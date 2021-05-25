@@ -9,6 +9,7 @@ import "prismjs/components/prism-python"
 import "prismjs/themes/prism.css"
 import PageMeta from "../components/PageMeta"
 import ScrollToTop from "../components/ScrollToTop"
+import ThemeSwitch from "../components/ThemeSwitch"
 
 function getPostMetaData(title, description, keywords) {
   return {
@@ -34,6 +35,9 @@ function BlogTemplate({ location, pageContext }) {
       />
       <header className="d-flex ai-center" style={{ height: 120 }}>
         <Breadcrumbs path={location.pathname} />
+        <span style={{ marginLeft: "auto" }}>
+          <ThemeSwitch />
+        </span>
       </header>
       <ScrollToTop />
       <section>

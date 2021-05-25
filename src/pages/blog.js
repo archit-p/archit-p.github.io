@@ -46,9 +46,12 @@ function Blog({ location }) {
         {data.allMarkdownRemark.edges.map(post => (
           <div className="mb-4">
             <Link className="blog-link mr-1" to={post.node.frontmatter.slug}>
-              <h3 className="mb-0 d-inline-block">
+              <span
+                className="mb-0 mt-0 d-inline-block"
+                style={{ fontSize: "1.25rem", fontWeight: 600 }}
+              >
                 {post.node.frontmatter.title}
-              </h3>
+              </span>
             </Link>
             <span className="blog-date">{post.node.frontmatter.date}</span>
           </div>

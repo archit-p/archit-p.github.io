@@ -48,7 +48,7 @@ function Home() {
         }}
       >
         <div
-          style={{ fontSize: "1.5rem", fontWeight: 700 }}
+          style={{ fontSize: "1.25rem", fontWeight: 600 }}
           className="d-flex ai-center"
         >
           Archit Pandey
@@ -57,7 +57,7 @@ function Home() {
           </span>
         </div>
       </header>
-      <p style={{ maxWidth: 480 }} className="mt-0">
+      <p style={{ maxWidth: 640 }} className="mt-0">
         <Emoji symbol="👋" label="waving-hand" /> Hi there, welcome to my
         webpage! I'm a software engineer by profession, and enjoy gardening in
         my spare time. Currently, I am employed as a Software Development

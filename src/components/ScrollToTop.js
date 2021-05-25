@@ -28,7 +28,7 @@ export default function ScrollToTop() {
     <div className="scroll-to-top-container">
       {isVisible && (
         <div className="scroll-icon-container" onClick={scrollToTop}>
-          <span className="svg-icon-xl">
+          <span className="svg-icon-xl svg-text">
             <UpArrow />
           </span>
         </div>
