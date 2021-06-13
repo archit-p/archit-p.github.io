@@ -4,7 +4,6 @@ export default function Table() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      class="icon icon-tabler icon-tabler-table"
       width="48"
       height="48"
       viewBox="0 0 24 24"
