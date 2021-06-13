@@ -231,7 +231,7 @@ a {
 }
 
 p {
-  display: inline-block;
+  display: block;
   line-height: 1.5rem;
 }
 
